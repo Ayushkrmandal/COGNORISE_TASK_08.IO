@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Image/Background.jpg'); /* Replace 'Image/Background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    border: 2px solid #797878; /* Dark border color */
+    transition: background-color 0.5s; /* Smooth transition for background color change */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Remove the spinner arrows from number input fields */
+input[type="number"] {
+    -moz-appearance: textfield; /* For Firefox */
+    appearance: textfield; /* For other browsers */
+}
+
+/* Remove the spinner arrows in Webkit-based browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent */
+}
+
+.categories-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent */
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, box-shadow 0.5s; /* Add transition for transform and box-shadow */
+}
+
+.categories-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+}
+
+.categories-container h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.categories-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-container li {
+    margin: 8px 0;
+    font-weight: bold;
+    color: #333;
+}
